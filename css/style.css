@@ -138,3 +138,46 @@ footer {
     height: 300px;
     object-fit: cover;
 }
+
+/*contacts.html*/
+.contact {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.contact h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.contact li {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.contact a:hover {
+    text-decoration: underline;
+}
