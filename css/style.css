@@ -103,3 +103,46 @@ footer {
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
+/*portfolio.html*/
+.portfolio {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.portfolio h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+
+.portfolio p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
