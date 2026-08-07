@@ -1,27 +1,22 @@
-/*index.html*/
+/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 
+/* Global */
 body {
     background: white;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-
+/* Navigation */
 nav {
     padding: 30px;
     text-align: center;
 }
-
 
 nav a {
     color: black;
@@ -30,7 +25,21 @@ nav a {
     font-size: 14px;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
 
+
+/* Headings */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+/* Hero Section */
 .hero {
     min-height: 80vh;
     display: flex;
@@ -40,11 +49,10 @@ nav a {
     text-align: center;
 }
 
-
 .hero h1 {
     font-size: 60px;
+    margin-bottom: 10px;
 }
-
 
 .hero h2 {
     font-size: 18px;
@@ -52,13 +60,13 @@ nav a {
     font-weight: 400;
 }
 
-
 .hero p {
     font-size: 12px;
     margin-top: 15px;
 }
 
 
+/* Buttons */
 .hero-buttons a {
     display: inline-block;
     margin: 20px 10px;
@@ -66,14 +74,35 @@ nav a {
     border: 1px solid black;
     color: black;
     text-decoration: none;
+    transition: 0.3s;
 }
-
 
 .hero-buttons a:hover {
     background: black;
     color: white;
 }
-/*About.html*/
+
+
+/* Intro Section */
+.intro {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* About Page */
 .about {
     max-width: 800px;
     margin: 80px auto;
@@ -81,12 +110,10 @@ nav a {
     text-align: center;
 }
 
-
 .about h1 {
     font-size: 48px;
     margin-bottom: 30px;
 }
-
 
 .about p {
     font-size: 18px;
@@ -94,7 +121,8 @@ nav a {
     margin-bottom: 20px;
 }
 
-/*portfolio.html*/
+
+/* Portfolio Page */
 .portfolio {
     max-width: 900px;
     margin: 80px auto;
@@ -102,12 +130,10 @@ nav a {
     text-align: center;
 }
 
-
 .portfolio h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
-
 
 .portfolio p {
     font-size: 18px;
@@ -122,14 +148,14 @@ nav a {
     gap: 20px;
 }
 
-
 .gallery img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-/*contacts.html*/
+
+/* Contact Page */
 .contact {
     max-width: 700px;
     margin: 80px auto;
@@ -137,37 +163,79 @@ nav a {
     text-align: center;
 }
 
-
 .contact h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
-
 
 .contact p {
     font-size: 18px;
     margin-bottom: 40px;
 }
 
-
 .contact ul {
     list-style: none;
     padding: 0;
 }
-
 
 .contact li {
     margin: 20px 0;
     font-size: 18px;
 }
 
-
 .contact a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
-
 .contact a:hover {
     text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 15px;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 16px;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: auto;
+    }
+
 }
