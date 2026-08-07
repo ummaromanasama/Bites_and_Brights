@@ -1,42 +1,38 @@
 /*index.html*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
+    background: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
-/* Navigation */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 25px;
+    padding: 30px;
+    text-align: center;
 }
 
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 16px;
+    margin: 20px;
+    font-size: 14px;
 }
 
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-
-/* Hero Section */
 .hero {
-    min-height: 85vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,43 +42,37 @@ nav a:hover {
 
 
 .hero h1 {
-    font-size: 64px;
-    letter-spacing: 3px;
+    font-size: 60px;
+}
+
+
+.hero h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
 
 .hero p {
-    font-size: 24px;
-    margin-top: 20px;
-    font-style: italic;
+    font-size: 12px;
+    margin-top: 15px;
 }
 
 
-/* Button */
-.button {
-    margin-top: 30px;
+.hero-buttons a {
+    display: inline-block;
+    margin: 20px 10px;
     padding: 12px 30px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-
-.button:hover {
-    background-color: white;
+    border: 1px solid black;
     color: black;
+    text-decoration: none;
 }
 
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
+.hero-buttons a:hover {
+    background: black;
+    color: white;
 }
-
-
 /*About.html*/
 .about {
     max-width: 800px;
