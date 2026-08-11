@@ -196,8 +196,44 @@ h1 {
 /* Footer */
 footer {
     text-align: center;
-    padding: 30px;
-    font-size: 12px;
+    padding: 40px 20px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px);
+    opacity: 0.75;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 25px;
 }
 
 
