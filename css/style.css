@@ -41,12 +41,67 @@ h1 {
 
 /* Hero Section */
 .hero {
+    position: relative;
     min-height: 80vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+}
+
+/* Background Slideshow */
+.hero-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    animation: slideshow 24s infinite;
+}
+
+/* Slide timing */
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 6s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 12s;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 18s;
+}
+
+
+/* Dark overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
 }
 
 .hero h1 {
@@ -66,20 +121,45 @@ h1 {
 }
 
 
+/* Slideshow Animation */
+@keyframes slideshow {
+
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
 /* Buttons */
 .hero-buttons a {
     display: inline-block;
     margin: 20px 10px;
     padding: 12px 30px;
-    border: 1px solid black;
-    color: black;
+    border: 1px solid white;
+    color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .hero-buttons a:hover {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 
 
