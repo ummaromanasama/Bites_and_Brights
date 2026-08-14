@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 
-/* Global */
+/* =========================
+   GLOBAL
+========================= */
+
 body {
     background: white;
     color: black;
@@ -12,25 +15,43 @@ body {
 }
 
 
-/* Navigation */
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 nav {
-    padding: 30px 10px;
+    padding: 25px 10px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 14px;
+    font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    opacity: 0.7;
 }
 
 
-/* Headings */
+/* =========================
+   HEADINGS
+========================= */
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -39,10 +60,13 @@ h1 {
 }
 
 
-/* Hero Section */
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +74,11 @@ h1 {
     overflow: hidden;
 }
 
-/* Background Slideshow */
+
+/* =========================
+   BACKGROUND SLIDESHOW
+========================= */
+
 .hero-slideshow {
     position: absolute;
     inset: 0;
@@ -69,7 +97,9 @@ h1 {
     animation: slideshow 20s infinite;
 }
 
+
 /* Slide timing */
+
 .slide:nth-child(1) {
     animation-delay: 0s;
 }
@@ -87,7 +117,10 @@ h1 {
 }
 
 
-/* Dark overlay */
+/* =========================
+   DARK OVERLAY
+========================= */
+
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -96,14 +129,17 @@ h1 {
 }
 
 
-/* Slideshow Animation */
+/* =========================
+   SLIDESHOW ANIMATION
+========================= */
+
 @keyframes slideshow {
 
     0% {
         opacity: 1;
     }
 
-    24% {
+    24.9% {
         opacity: 1;
     }
 
@@ -117,16 +153,10 @@ h1 {
 }
 
 
-/* Dark overlay */
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 1;
-}
+/* =========================
+   HERO CONTENT
+========================= */
 
-
-/* Hero Content */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -151,32 +181,10 @@ h1 {
 }
 
 
-/* Slideshow Animation */
-@keyframes slideshow {
+/* =========================
+   BUTTONS
+========================= */
 
-    0% {
-        opacity: 0;
-    }
-
-    5% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 1;
-    }
-
-    30% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-/* Buttons */
 .hero-buttons a {
     display: inline-block;
     margin: 20px 10px;
@@ -193,7 +201,10 @@ h1 {
 }
 
 
-/* Intro Section */
+/* =========================
+   INTRO SECTION
+========================= */
+
 .intro {
     max-width: 800px;
     margin: 40px auto;
@@ -212,7 +223,10 @@ h1 {
 }
 
 
-/* About Page */
+/* =========================
+   ABOUT PAGE
+========================= */
+
 .about {
     max-width: 800px;
     margin: 80px auto;
@@ -232,7 +246,10 @@ h1 {
 }
 
 
-/* Portfolio Page */
+/* =========================
+   PORTFOLIO PAGE
+========================= */
+
 .portfolio {
     max-width: 900px;
     margin: 80px auto;
@@ -251,7 +268,6 @@ h1 {
     margin-bottom: 40px;
 }
 
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -265,8 +281,10 @@ h1 {
 }
 
 
+/* =========================
+   CONTACT PAGE
+========================= */
 
-/* Contact Page */
 .contact {
     max-width: 700px;
     margin: 80px auto;
@@ -304,7 +322,10 @@ h1 {
 }
 
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     text-align: center;
     padding: 40px 20px;
@@ -351,10 +372,11 @@ footer {
 }
 
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 
     nav {
         padding: 20px 10px;
@@ -368,8 +390,7 @@ footer {
     }
 
     .hero {
-        min-height: 70vh;
-        padding: 20px;
+        min-height: 100vh;
     }
 
     .hero h1 {
@@ -378,6 +399,11 @@ footer {
 
     .hero h2 {
         font-size: 16px;
+    }
+
+    .hero-buttons a {
+        margin: 10px 5px;
+        padding: 10px 20px;
     }
 
     .intro {
