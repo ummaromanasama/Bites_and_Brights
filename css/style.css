@@ -753,3 +753,103 @@ footer {
     }
 
 }
+/* =========================
+   WHY BITES & BRIGHTS
+========================= */
+
+.why-bites {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 60px 30px;
+
+    text-align: center;
+}
+
+.why-bites h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.why-bites p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.service h3 {
+    font-size: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .why-bites {
+        margin: 60px auto;
+        padding: 40px 25px;
+    }
+
+    .why-bites h2 {
+        font-size: 28px;
+    }
+
+    .why-bites p {
+        font-size: 16px;
+    }
+
+    .services {
+        margin: 60px auto;
+    }
+
+    .services h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+
+}
